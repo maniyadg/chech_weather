@@ -114,55 +114,6 @@ getCountries()//function invoke
 
 
 
-
-
-// let container = document.createElement("div")
-// container.classList.add("container")
-
-// let row = document.createElement("div")
-// row.classList.add("row")
-
-
-// document.body.append(container);
-// container.append(row);
-
-
-// var req = new XMLHttpRequest();
-// req.open("GET", "https://restcountries.com/v3.1/all", true);
-// req.send();
-// req.onload = function (output) {
-//   var country = JSON.parse(this.response);
-//   console.log(country)
-//   for (var i in country) {
-//     try {
-//       var cname = country[i].name.common;
-//       // console.log(cname)
-//       var latlong = country[i].latlng;
-//       if (latlong == 0) throw new Error("Lat n Lat not found");
-//       // weatherdata(cname, ...latlong);
-//       row.innerHTML+=`
-//       <div class="col-lg-4 col-sm-12 ">
-//       <div class="card border-success " >
-//        <div class="card-header text-dark"  style="text-align:center; font-size:20px;">
-//        <b>${cname}</b></div>
-//        <div class="card-body text-dark "style="text-align:center; ">
-//        <img src = "${country[i].flags.png}" style="width:100px">
-//          <h5 class="card-title"> </h5>
-//          <h5 class="card-title"> Capital :${country[i].capital}</h5>
-//          <h5 class="card-title"> Region :${country[i].region}</h5>
-//          <h5 class="card-title"> Country Code :${country[i].cca3}</h5>
-//          <button class="btn btn-primary" onclick="weatherdata(  ${latlong} );">Check weather</button>
-//          <h5>${output}</h5>
-//       </div>
-//      </div>
-//      </div>
-//      `
-//     } catch (error) {
-//       console.log(error);
-//     }
-//   }
-// };
-
 // var weatherdata=function(name,lat,lng)
 // {
 //     var URL=`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=5464182bd1c95d44386612faf31a20dc`;
@@ -170,12 +121,6 @@ getCountries()//function invoke
 //     request.open('GET',URL,true);
 //     request.send();
 //     request.onload=function(){
-//         var data=JSON.parse(this.response);
-//         output = `${data.main.temp}`
-//         return output
-//         // h5.innerHTML = `${data.main.temp}`
-//         // console.log(`${name}:${data.main.temp}`);
-
 //     }
 // }
 
